@@ -140,3 +140,13 @@ volumeSlider.addEventListener('input', () => {
   music.volume = volumeSlider.value / 100;  // Bagi 100 supaya skala 0-1
 });
 
+window.addEventListener('click', () => {
+  if (music.paused) {
+    music.play().catch(err => {
+      console.log("Audio autoplay error:", err);
+    });
+  }
+}, { once: true });
+
+
+
