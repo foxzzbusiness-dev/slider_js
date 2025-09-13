@@ -6,15 +6,18 @@
     <title>Slider Keren</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <canvas id="snowCanvas"></canvas>
     <div class="slider-layout">
   <div class="slider-container">
 
     <div class="slider">
       <img src="image/slider_1.jpg" alt="">
       <div class="caption">
-        <h1>SELAMAT DATANG</h1>
+        <h1 class="sparkle-text">SELAMAT DATANG</h1>
+        <h2>私の世界</h2>
         <p>Selamat datang di dunia saya!</p>
       </div>
     </div>
@@ -22,7 +25,8 @@
     <div class="slider">
       <img src="image/slider_2.jpg" alt="">
       <div class="caption">
-        <h1>BELAJAR SLIDER</h1>
+        <h1 class="sparkle-text">BELAJAR SLIDER</h1>
+        <h2>私の世界</h2>
         <p>Apakah anda ingin belajar slider?</p>
       </div>
     </div>
@@ -30,19 +34,25 @@
     <div class="slider">
       <img src="image/slider_3.jpg" alt="">
       <div class="caption">
-        <h1>BELAJAR DOM</h1>
+        <h1 class="sparkle-text">BELAJAR DOM</h1>
+        <h2>私の世界</h2>
         <p>Apakah anda ingin belajar DOM?</p>
       </div>
     </div>
 
-    <button class="nav prev">&#10094;</button>
-    <button class="nav next">&#10095;</button>
-
+<button class="nav prev">&#10094;</button> 
+<button class="nav next">&#10095;</button>
     <div class="dots-container"></div>
 
   </div>
 </div>
+<audio id="bg-music" src="musik/wwd.mp3juice.blog - Arctic Monkeys - 505 (320 KBps).mp3" autoplay loop></audio>
+<button id="mute-btn">🔇</button>
 
+<div id="volume-control">
+  <label for="volume-slider">Volume:</label>
+  <input type="range" id="volume-slider" min="0" max="100" step="1" value="50">
+</div>
 
 </body>
 </html>
